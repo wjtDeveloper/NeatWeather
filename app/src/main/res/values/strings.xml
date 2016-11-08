@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NeatWeather</string>
+    <string name="app_title">天气预报</string>
+    <string name="setting">设置</string>
+    <string name="user">用户</string>
+    <string name="current_city">北京</string>
+    <string name="get_weather_failed">获取天气信息失败</string>
+    <string name="city_name">城市</string>
+    <string name="date">日期</string>
+</resources>

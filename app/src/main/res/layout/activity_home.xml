@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_home"
+    tools:context="com.w4lr.neatweather.controller.activity.HomeActivity">
+
+
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:layout_gravity="left"
+        android:background="#00f"
+        android:text="侧滑菜单"
+        android:layout_width="@dimen/left_menu_width"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/menu_user"
+            android:text="@string/user"
+            android:drawableLeft="@drawable/icon_setting"
+            style="@style/left_menu_style" />
+
+        <TextView
+            android:layout_below="@id/menu_user"
+            android:id="@+id/menu_setting"
+            android:text="@string/setting"
+            android:drawableLeft="@drawable/icon_setting"
+            style="@style/left_menu_style" />
+
+    </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/title_bar"/>
+
+
+            <ListView
+                android:id="@+id/lv_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
+
+
